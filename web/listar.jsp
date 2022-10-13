@@ -19,7 +19,7 @@
        
     </head>
     <body>
-         <table class="table table-striped">
+ <table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">Codigo</th>

@@ -39,9 +39,9 @@ public class ManterProduto extends DAO {
             String query = "select * FROM produtos";
             ps = con.prepareStatement(query);
             ResultSet rs= ps.executeQuery();
-            Produto ntcben;
+            
             while (rs.next()){
-                ntcben = new Produto();
+                Produto ntcben = new Produto();
                 ntcben.setCodigo(rs.getInt("codigo"));
                 ntcben.setNome(rs.getString("nome"));
                 ntcben.setPreco(rs.getDouble("preco"));
@@ -85,6 +85,7 @@ public class ManterProduto extends DAO {
                 po.setQuantidade(rs.getInt("quantidade"));
                 return po;
             }
+            fecharBanco();
         } catch (Exception e) {
             System.out.println("Error"+e.getMessage());
         }

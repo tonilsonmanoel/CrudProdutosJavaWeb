@@ -61,7 +61,7 @@ public final class listar_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("       \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("         <table class=\"table table-striped\">\n");
+      out.write(" <table class=\"table table-striped\">\n");
       out.write("  <thead>\n");
       out.write("    <tr>\n");
       out.write("      <th scope=\"col\">Codigo</th>\n");
